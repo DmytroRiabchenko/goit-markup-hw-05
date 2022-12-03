@@ -24,9 +24,9 @@
             <a href="index.html" class="logo"><span class="logo-style">Web</span>Studio</a>
             <nav>
                 <ul class="site-nav list">
-                    <li class="item"><a href="./studio.html" class="link current">Студія</a></li>
+                    <li class="item"><a href="./index.html" class="link current">Студія</a></li>
                     <li class="item"><a href="./portfolio.html" class="link">Портфоліо</a></li>
-                    <li class="item"><a href="index.html" class="link">Контакти</a></li>
+                    <li class="item"><a href="./index.html" class="link">Контакти</a></li>
                 </ul>
             </nav>
             <ul class="auth-nav list">
@@ -52,7 +52,7 @@
         <section class="hero">
             <div class="container">
                 <h1 class="hero-title">Ефективні рішення для <br /> вашого бізнесу</h1>
-                <button class="btn" type="button">Замовити послугу</button>
+                <button class="btn" type="button" data-modal-open>Замовити послугу</button>
             </div>
         </section>
         <section class="section no-padding-bottom">
@@ -106,12 +106,15 @@
                 <ul class="imeg-work">
                     <li class="foto-work">
                         <img src="./images/img1.jpg" alt="Додатки" width="370" height="294">
+                        <p class="label-team">Десктопні додатки</p>
                     </li>
                     <li class="foto-work">
                         <img src="./images/img2.jpg" alt="Мобільні аплікації" width="370" height="294">
+                        <p class="label-team">Мобільні додатки</p>
                     </li>
                     <li class="foto-work">
                         <img src="./images/img3.jpg" alt="Дизайн" width="370" height="294">
+                        <p class="label-team">Дизайнерські рішення</p>
                     </li>
                 </ul>
             </div>
@@ -373,6 +376,15 @@
             </div>
         </div>
     </footer>
+    <div class="modal-backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button tupe="button" class="modal-close" data-modal-close>
+                <svg class="icon-feature-team-close" width="30px" height="30px">
+                    <use href="./images/icons.svg/icons.svg#icon-close"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
     <script src="./js/modal.js"></script>
 </body>
 
